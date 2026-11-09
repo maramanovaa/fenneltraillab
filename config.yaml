@@ -1,0 +1,7 @@
+FROM alpine:3.18
+CMD ["echo", "ready"]
+version: "3"
+services:
+  app:
+    image: busybox
+    restart: unless-stopped
